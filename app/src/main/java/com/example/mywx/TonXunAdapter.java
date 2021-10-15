@@ -1,6 +1,7 @@
 package com.example.mywx;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,7 +22,7 @@ public class TonXunAdapter extends BaseAdapter implements SectionIndexer {
     Context context;
     List<TonXunLu> tongXunList;
     public  void log(Object a){
-        Log.d("显示", a+"");
+        Log.d("找bug", a+"");
     }
     public TonXunAdapter(Context context, List<TonXunLu> tongXunList) {
         this.context = context;
@@ -63,6 +64,7 @@ public class TonXunAdapter extends BaseAdapter implements SectionIndexer {
         if (position == positionForSection) {
             holder.showLetter.setVisibility(View.VISIBLE);
             holder.showLetter.setText(tonXunLu.getFirstLetter());
+            holder.showLetter.setBackgroundColor(Color.parseColor("#CDEEEBEB"));
         } else {
             holder.showLetter.setVisibility(View.GONE);
         }

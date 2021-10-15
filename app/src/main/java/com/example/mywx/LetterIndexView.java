@@ -65,7 +65,7 @@ public class LetterIndexView extends View {
         super(context,attrs);
         paint = new Paint();
         paint.setAntiAlias(true);
-        paint.setTextSize(24);
+        paint.setTextSize(45);
 
     }
 
@@ -76,7 +76,7 @@ public class LetterIndexView extends View {
             if (i == choosedPosition) {
                 paint.setColor(Color.RED);
             } else {
-                paint.setColor(Color.BLACK);
+                paint.setColor(Color.GRAY);
             }
             canvas.drawText(letters[i], (getWidth() - paint.measureText(letters[i])) / 2, (i + 1) * perTextHeight, paint);
         }

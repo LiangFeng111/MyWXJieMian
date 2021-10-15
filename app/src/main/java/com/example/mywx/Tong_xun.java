@@ -21,7 +21,7 @@ public class Tong_xun extends Fragment {
 
     List<TonXunLu> list = new ArrayList<>();
     ListView listView ;
-    TextView textView ;
+    TextView textView ,show_letter;
     Context context;
     View view;
     public void log(String a,Object b){
@@ -88,14 +88,14 @@ public class Tong_xun extends Fragment {
         list.add(new TonXunLu("喜文乐贱",R.drawable.tou_xiang1,"X"));
         list.add(new TonXunLu("喜文乐贱",R.drawable.tou_xiang1,"X"));
         list.add(new TonXunLu("星河倚月",R.drawable.tou_xiang1,"X"));
-        list.add(new TonXunLu("写给雨的情书",R.drawable.tou_xiang1,"x"));
+        list.add(new TonXunLu("写给雨的情书",R.drawable.tou_xiang1,"X"));
         list.add(new TonXunLu("寡人之疾",R.drawable.tou_xiang1,"G"));
         list.add(new TonXunLu("寡人之疾",R.drawable.tou_xiang1,"G"));
         list.add(new TonXunLu("寡人之疾",R.drawable.tou_xiang1,"G"));
-        list.add(new TonXunLu("你是一坨屎",R.drawable.tou_xiang1,"n"));
-        list.add(new TonXunLu("你是一坨屎",R.drawable.tou_xiang1,"n"));
-        list.add(new TonXunLu("你是一坨屎",R.drawable.tou_xiang1,"n"));
-        list.add(new TonXunLu("你是一坨屎",R.drawable.tou_xiang1,"n"));
+        list.add(new TonXunLu("你是一坨屎",R.drawable.tou_xiang1,"N"));
+        list.add(new TonXunLu("你是一坨屎",R.drawable.tou_xiang1,"N"));
+        list.add(new TonXunLu("你是一坨屎",R.drawable.tou_xiang1,"N"));
+        list.add(new TonXunLu("你是一坨屎",R.drawable.tou_xiang1,"N"));
     }
 
 
